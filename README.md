@@ -72,3 +72,8 @@ The relational-algebra operation R(A,B) ⊲⊳ B<C S(C,D) produces all tuples (a
 1:Map: For each tuple (a, b) of R, produce the key-value pair (1,((R,b) , (R, a))). For each tuple (c,d) of S, produce the key-value pair (1,((S,c),(S,d))) <br> Reduce:input: (1,[((R,b),(R, a)),....,((S,c),(S,d)),...] output: Construct all pairs consisting of one
 with first component R and the other with first component S, The output for key (b,c) is ((b,c),((R,a),(S,d))<br> 2:Map: input:((b,c),((R,a),(S,d)) outpt: (if b<c )  ((b,c),((R,a),(S,d)) <br> Reduce: input: ((b,c),((R,a),(S,d)) output: (a,b,c,d).
 
+
+## ! Exercise 2.3.5:
+
+----
+
